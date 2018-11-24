@@ -1,6 +1,6 @@
 #!nsh
 #
-# @name Blade 130X
+# @name Blade 140X
 #
 # @type Helicopter
 # @class Copter
@@ -19,7 +19,7 @@ sh /etc/init.d/rc.mc_defaults
 # Configure as helicopter (number 4 defined in commander_helper.cpp)
 set MAV_TYPE 4
 
-set MIXER blade130
+set MIXER blade140
 
 #set PWM_OUT 1234
 

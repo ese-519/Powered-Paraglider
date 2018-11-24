@@ -1,0 +1,27 @@
+
+#!nsh
+#
+# @name Paraplane
+#
+# @type Helicopter
+# @class Copter
+#
+#
+# @output MAIN1 left servo
+# @output MAIN2 right  servo
+# @output MAIN3 motor
+#
+
+sh /etc/init.d/rc.fw_defaults
+
+
+# set as a plane
+set MAV_TYPE 1
+
+
+set MIXER paraplane
+
+set PWM_OUT 4
+set PWM_DISARMED
+
+
