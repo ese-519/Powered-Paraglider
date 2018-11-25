@@ -21,7 +21,12 @@ set MAV_TYPE 1
 
 set MIXER paraplane
 
-set PWM_OUT 4
+
+set PWM_OUT 1234
 set PWM_DISARMED
 
 
+if [ $AUTOCNF = yes ]
+then
+    param set FW_ARSP_MODE 1.0
+fi
