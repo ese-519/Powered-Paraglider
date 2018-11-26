@@ -23,7 +23,7 @@ set MIXER paraplane
 
 
 set PWM_OUT 1234
-set PWM_DISARMED
+set PWM_DISARMED 1000
 
 
 if [ $AUTOCNF = yes ]
