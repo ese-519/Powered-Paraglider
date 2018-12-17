@@ -1,0 +1,102 @@
+
+
+# summing mixer
+
+
+#servo 1, mapped from roll
+M:2
+S: 0 0 0 20000  -10000    -10000 10000
+S: 0 1 0 20000  0         0      20000
+
+#servo 2, mapped from roll
+M:2
+S: 0 0 20000 0    0        -20000   0
+S: 0 1  0 -20000  10000    -10000   10000
+
+# motor, mapped from thrust
+M:1
+S: 0 3  0  20000 -10000 -10000  10000
+# map pitch to roll
+#S: 0 1  20000  0 0      -10000  10000
+
+
+
+
+
+
+
+
+# summing mixer
+
+#servo 2, mapped from roll
+#M:2
+#S: 0 0 20000 0    0        -20000   0
+#S: 0 1  0 -20000  10000    -10000   10000
+
+
+#servo 1, mapped from roll
+#M:2
+#S: 0 0 0 20000  -10000    -10000 10000
+#S: 0 1 0 20000  0         0      20000
+
+
+# motor, mapped from thrust
+#M:1
+#S: 0 3  0  20000 -10000 -10000  10000
+# map pitch to roll
+#S: 0 1  20000  0 0      -10000  10000
+
+
+
+
+
+#servo 1, mapped from roll
+M:1
+S: 0 0 0 20000  -10000   10000 -10000
+#S: 0 1  0 -20000  10000    0   10000
+
+
+# nothing
+# S: 0 0 0 20000  0    0 -20000
+#right range, wrong dir
+#S: 0 0 0 20000  0  0 10000
+# no movement right, goes full wrong dir past 0
+#S: 0 0 0 20000  0  10000 0
+#niothing happens
+#S: 0 0 0 20000  10000   10000 -10000
+
+
+
+
+#servo 2, mapped from roll
+M:1
+
+S: 0 0 0 -20000    10000    -10000 10000
+#S: 0 1 0 20000    0   0      10000
+
+
+S: 0 0 0 -20000    0    -10000 10000
+
+
+
+# when 100%, jerks the correct direction
+#S: 0 0 20000 0    0      0  -20000
+#starts at full, goes nowhere
+#S: 0 0 20000 0     0   10000  000
+# starts at half, goes wrong dir
+#S: 0 0 20000 0     0   -20000  0
+#starts at half, goes nowhere
+#S: 0 0 20000 0     0   -10000  0
+# jerks to full range
+S: 0 0 20000 0      10000    10000 -10000
+
+
+
+
+
+# motor, mapped from thrust
+M:1
+S: 0 3  0  20000 -10000 -10000  10000
+# map pitch to roll
+#S: 0 1  20000  0 0      -10000  10000
+
